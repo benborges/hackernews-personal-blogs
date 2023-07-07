@@ -28,7 +28,7 @@ func main() {
 		username, text := getComment(id)
 		karma := getUserKarma(username)
 
-		if karma <= 100 {
+		if karma <= 10 {
 			fmt.Println("Ignoring: ", username, "(", karma, ")")
 			continue
 		}
